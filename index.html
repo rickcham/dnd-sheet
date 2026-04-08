@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ficha de Personagem D&D 5e</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Ficha de Personagem D&D 5e</h1>
+
+<div class="bloco">
+  <h2>Informações Gerais</h2>
+  <input id="nome" placeholder="Nome do Personagem">
+  <input id="raca" placeholder="Raça">
+  <input id="classe" placeholder="Classe">
+  <input id="nivel" placeholder="Nível">
+  <input id="antecedente" placeholder="Antecedente">
+  <input id="tendencia" placeholder="Tendência">
+</div>
+
+<div class="bloco">
+  <h2>Atributos</h2>
+  <input id="forca" placeholder="Força" oninput="calcMod()">
+  <div id="mod_forca">Mod: 0</div>
+
+  <input id="destreza" placeholder="Destreza" oninput="calcMod()">
+  <div id="mod_destreza">Mod: 0</div>
+
+  <input id="constituicao" placeholder="Constituição" oninput="calcMod()">
+  <div id="mod_constituicao">Mod: 0</div>
+
+  <input id="inteligencia" placeholder="Inteligência" oninput="calcMod()">
+  <div id="mod_inteligencia">Mod: 0</div>
+
+  <input id="sabedoria" placeholder="Sabedoria" oninput="calcMod()">
+  <div id="mod_sabedoria">Mod: 0</div>
+
+  <input id="carisma" placeholder="Carisma" oninput="calcMod()">
+  <div id="mod_carisma">Mod: 0</div>
+</div>
+
+<div class="bloco perícias">
+    <div class="grid1">
+ 
+  
+  <label><input type="checkbox" value="Atletismo"> Atletismo</label><br>
+  <label><input type="checkbox" value="Acrobacia"> Acrobacia</label><br>
+ <label><input type="checkbox" value="Prestidigitação"> Prestidigitação</label><br>
+ <label><input type="checkbox" value="Furtividade"> Furtividade</label><br>
+ <label><input type="checkbox" value="Arcanismo"> Arcanismo</label><br>
+ <label><input type="checkbox" value="História"> História</label><br>
+ <label><input type="checkbox" value="Investigação"> Investigação</label><br>
+ <label><input type="checkbox" value="Natureza"> Natureza</label><br>
+ <label><input type="checkbox" value="Religião"> Religião</label><br>
+</div>
+
+<div class="grid2">
+ <label><input type="checkbox" value="Lidar com Animais"> Lidar com Animais</label><br>
+ <label><input type="checkbox" value="Intuição"> Intuição</label><br>
+ <label><input type="checkbox" value="Medicina"> Medicação</label><br>
+ <label><input type="checkbox" value="Percepção"> Percepção</label><br>
+ <label><input type="checkbox" value="Sobrevivência"> Sobrevivência</label><br>
+ <label><input type="checkbox" value="Enganação"> Enganação</label><br>
+ <label><input type="checkbox" value="Intimidação"> Intimidação</label><br>
+ <label><input type="checkbox" value="Atuação"> Atuação</label><br>
+  <label><input type="checkbox" value="Persuasão"> Persuasão</label><br>
+  </div>
+    <div class="grid1">
+    <label><input type="checkbox" value="Armas Simples"> Armas Simples</label><br>
+  <label><input type="checkbox" value="Armas marciais"> Armas marciais</label><br>
+ <label><input type="checkbox" value="Armas de fogo"> Armas de fogo </label><br>
+ <label><input type="checkbox" value="Armaduras leves"> Armaduras leves</label><br>
+ <label><input type="checkbox" value="Armaduras médias"> Armaduras médias</label><br>
+ <label><input type="checkbox" value="Armaduras pesadas"> Armaduras pesadas</label><br>
+  <label><input type="checkbox" value="Escudos"> Escudos</label><br>
+</div>
+</div>
+
+
+<div class="bloco proficiências">
+
+ 
+
+
+<div class="bloco">
+  <h2>Línguas</h2>
+  <textarea id="linguas" rows="4"></textarea>
+</div>
+
+
+<div class="bloco">
+  <h2>Traços e Habilidades</h2>
+  <textarea id="tracos" rows="4"></textarea>
+</div>
+
+<button onclick="gerarFicha()">Gerar Ficha</button>
+
+<div class="bloco">
+  <h2>Resultado</h2>
+  <div id="output"></div>
+  <button onclick="copiar()">Copiar</button>
+</div>
+
+<script src="iindex.js">
+
+</script>
+
+</body>
+</html>
